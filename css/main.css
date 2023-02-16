@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* Estilos Header */
+.header {
+  background-color: #d17c7c;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header .navbar {
+    width: 90vw; }
+    .header .navbar .logo {
+      margin: 0;
+      color: white;
+      font-family: "Dancing Script", cursive; }
+    .header .navbar .nav-link {
+      color: white;
+      font-size: 1.1rem; }
+
+.container-principal {
+  background-color: #ffebee;
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container-principal .container-bienvenida {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .container-principal .container-bienvenida .bienvenida__caja-img {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container-principal .container-bienvenida .bienvenida__caja-img .bienvenida__img {
+        width: 70%; }
+    .container-principal .container-bienvenida .bienvenida__caja-textos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%; }
+      .container-principal .container-bienvenida .bienvenida__caja-textos .bienvenida__h1 {
+        color: #d17c7c;
+        font-size: calc(1.6rem + 1.5vw);
+        font-family: "Satisfy", cursive; }
+      .container-principal .container-bienvenida .bienvenida__caja-textos .bienvenida__parrafo {
+        font-size: 1.2rem;
+        text-align: justify; }
+      .container-principal .container-bienvenida .bienvenida__caja-textos .bienvenida__parrafo {
+        font-size: 1.2rem;
+        text-align: justify; }
+      .container-principal .container-bienvenida .bienvenida__caja-textos .bienvenida__boton {
+        background-color: #d17c7c;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px 12px;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: ease 0.2s; }
+      .container-principal .container-bienvenida .bienvenida__caja-textos .bienvenida__boton:hover {
+        background-color: white;
+        color: #d17c7c;
+        border: 1px solid #d17c7c; }
+
+/* Responsive Sección Bienvenida */
+@media screen and (max-width: 1440px) {
+  .bienvenida__img {
+    width: 80%; }
+  .bienvenida__parrafo {
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 1024px) {
+  .container-bienvenida {
+    gap: 60px; }
+    .container-bienvenida .bienvenida__parrafo {
+      font-size: 1rem; }
+  .bienvenida__img {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .container-principal {
+    height: 900px;
+    padding: 30px 0; }
+    .container-principal .container-bienvenida {
+      flex-direction: column;
+      gap: 30px; }
+      .container-principal .container-bienvenida .bienvenida__caja-img {
+        width: 90%; }
+      .container-principal .container-bienvenida .bienvenida__caja-textos {
+        align-items: center;
+        width: 90%; }
+        .container-principal .container-bienvenida .bienvenida__caja-textos .bienvenida__h1 {
+          font-size: 2rem;
+          margin-bottom: 10px; }
+        .container-principal .container-bienvenida .bienvenida__caja-textos .bienvenida__parrafo {
+          text-align: center; } }
+
+@media screen and (max-width: 320px) {
+  .logo {
+    display: none; } }
+
+/* Estilos Footer */
+.footer {
+  background-color: #d17c7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  gap: 40px; }
+  .footer .footer__icono {
+    height: 30px; }
+
+/* Responsive footer */
+@media screen and (max-width: 768px) {
+  .footer__icono {
+    height: 25px; } }
+
+/* Página de contacto con Grids*/
+.container-contacto {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  height: 650px;
+  align-content: center;
+  justify-content: center;
+  background-color: #ffebee; }
+  .container-contacto .container-versiculo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/cielo.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding: 0 15px;
+    border-top: 1px solid #d17c7c;
+    border-left: 1px solid #d17c7c;
+    border-bottom: 1px solid #d17c7c; }
+    .container-contacto .container-versiculo .versiculo {
+      background-color: #d17c7c81;
+      border-radius: 20px;
+      color: white;
+      padding: 10px; }
+  .container-contacto .container-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: 1px solid #d17c7c; }
+    .container-contacto .container-formulario .contactanos {
+      font-size: 2rem;
+      font-family: "Satisfy", cursive;
+      color: #d17c7c; }
+    .container-contacto .container-formulario .formulario-boton {
+      background-color: #d17c7c;
+      color: white;
+      border: none; }
+
+/* Responsive contáctanos */
+@media screen and (max-width: 1024px) {
+  .container-contacto {
+    grid-template-columns: 350px 350px; } }
+
+@media screen and (max-width: 768px) {
+  .container-contacto {
+    grid-template-columns: auto auto;
+    height: auto;
+    padding: 60px; }
+    .container-contacto .container-versiculo {
+      grid-column: 1/3;
+      height: 300px;
+      width: auto;
+      border-bottom: none;
+      border-right: 1px solid #d17c7c; }
+    .container-contacto .container-general-formulario {
+      grid-column: 1/3; } }
+
+@media screen and (max-width: 768px) {
+  .container-principal-notas {
+    height: 600px; } }
+
+@media screen and (max-width: 600px) {
+  .container-principal-devocionales {
+    height: 1245px;
+    padding: 30px; } }
+
+@media screen and (max-width: 400px) {
+  .container-principal-devocionales {
+    height: 1600px;
+    padding: 30px; } }
